@@ -7,6 +7,8 @@ import subprocess
 
 
 if __name__ == "__main__":
+    print('check tag CI')
+
     if not os.environ['PRE_COMMIT_LOCAL_BRANCH'].startswith('refs/tags/'):
         sys.exit(0)
 
